@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수</title>
+</head>
+
+<body>
+    <h2>변수</h2>
+
+    <script>
+        'use strict' // 자바스크립트 엄격형으로 선언
+        var num;
+        num = 10;
+        console.log(num); // 변수
+        console.log("num"); // 문자열
+
+        var num2;
+        console.log(num2); // undefined 못찾는 값
+
+        // num3 = 20;
+        // console.log(num3); // error 발생, 변수를 선언하지 않았기 때문
+
+        var num2;
+        num2 = 20;
+        console.log(num2); // 20
+        var num3;
+        num3 = 30;
+        document.write("더하기 : " + (num2 + num3) + "<br>"); // 숫자일 경우 + 는 연산
+
+        let age;
+        age = 30;
+        console.log(age); // 30
+
+        // let age;
+        // age = 50;
+        // let은 같은 변수명을 여러번 사용할 수 없다.
+
+        let name;
+        name = "김사과";
+        console.log(name);
+
+        let name2;
+        name2 = "박딸기";
+
+        document.write("<h1>" + (name + name2) + "</h1>"); // 문자일 경우 + 는 결합
+
+
+        // var를 사용해서 상수를 선언할때는 값을 대입한 후 두 번 대입을 안 한다
+        // const를 사용해서 상수를 선언할때는 한 번 값을 선언 후 다시 재입력이 안 된다.
+
+        var num5 = 100;
+        document.write('상수 num5 : ' + num5);
+
+        const num6 = '100';
+        document.write("<p>" + num6 + "</p>");
+        // num6 = '200'; 상수는 재할당이 되지않으며, 상수는 선언할때 값을 꼭 대입해주어야 한다.
+    </script>
+
+</body>
+
+</html>
